@@ -1,0 +1,106 @@
+import React from 'react'
+import YarcaudIMG from '../images/Yarcaud.jpeg'
+import Yarcaud1 from '../images/yercaud...(1).jpeg'
+import Yarcaud2 from '../images/yercaud1 (2).jpeg'
+import Yarcaud3 from '../images/yercaud1.(3).jpeg'
+import Yarcaud4 from '../images/yercaud1.(4).jpeg'
+import { Row, Col, Container } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
+
+const Yercaud = () => {
+  return (
+    <section id='yarcaud'className='container mt-5'>
+    <div >
+      <h2 className='primary-heading'>08. Yarcaud</h2>
+      
+      <Row className="align-items-center">
+        <Col md={6}  className="text-right my-4">
+          <img
+            src={YarcaudIMG}
+            alt="Yarcaud_IMG"
+            className="myImage" 
+            style={{ height: '340px' ,width:'550px'}} 
+          />
+        </Col>
+        <Col md={6}> 
+          
+          <h5 className='primary-text-heading yercaud-topMargin'>
+            "The Land of Seven Forests."
+          </h5> 
+          <p className='primary-text'>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yercaud Tourism Nestled in the Shivaroy Hills of Tamil Nadu, Yercaud is a hill station in the Eastern Ghats steeped in abundant greenery. Commonly called 'Ooty of the Poor, this region has a history dating back to the time of the British. Located at an altitude of 4970 feet, Yercaud is known for its vast expanses of coffee plantations and great weather.
+            
+            <br />
+            <br />
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yercaud lake is the main point of attraction of the region.One of the many highlights is the summer festival that takes place in May. It is dedicated to Lord Servarayan, the supreme god of the ranges and gives visitors a glimpse into the rich heritage of this region.
+          </p>
+        </Col>
+     </Row>
+   </div>
+
+    <div className='bottomMargin mt-5'>
+      <h3 className='text-center secondary-heading'>
+          Must Visit Place In Yarcaud
+      </h3>
+    
+      <Row className="row" >
+        <Col md={3}>
+          <Card>
+            <Card.Img variant="top" src={Yarcaud1} />
+            <Card.Body>
+              <Card.Title>Pagoda Point</Card.Title>
+              <Card.Text>
+              Located in the eastern part of the Yercaud Hills, Pagoda point is a beautiful viewpoint where one is treated...
+              </Card.Text>
+              <Button variant="primary">Read More</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={3}>
+          <Card>
+            <Card.Img variant="top" src={Yarcaud2} />
+            <Card.Body>
+              <Card.Title>Botanical Garden</Card.Title>
+              <Card.Text>
+              Any tourist who is interested in gods gift to this planet, the wondrous flora, and in knowing about various...
+              </Card.Text>
+              <Button variant="primary">Read More</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={3}>
+          <Card>
+            <Card.Img variant="top" src={Yarcaud3} />
+            <Card.Body>
+              <Card.Title>Emerald Lake</Card.Title>
+              <Card.Text>
+              The most alluring aspect of Yercaud is its big yet natural lake very popularly known as the Emerald Lake...
+              </Card.Text>
+              <Button variant="primary">Read More</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={3}>
+          <Card>
+            <Card.Img variant="top" src={Yarcaud4} />
+            <Card.Body>
+              <Card.Title>Lady,s Seat</Card.Title>
+              <Card.Text>
+              Lady's Seat is a viewpoint that overlooks the winding ghat road and offers a spectacular view of Mettur Dam...
+              </Card.Text>
+              <Button variant="primary">Read More</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    
+    </div>
+  </section>
+  )
+}
+
+export default Yercaud

@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+.navbar{
+  background-color: darkgray;
+  
+
+}
+a{
+  color:white;
+}
+ul{
+  list-style: none;;
+}
+ul li{
+  cursor:pointer;
+}
+.row{
+  margin-top:30px;
+}
